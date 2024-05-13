@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body{
+    /* background-image: url('images/bg2.jpg');
+    background-repeat:repeat-x;
+    background-position: center; */
+    /* background-size: 100%; */
+    /* background-color: rgb(226, 146, 141); */
+    /* rgb(226, 146, 141) */
+    max-height: 800px;
+    overflow: hidden;
+}
+
+.container{
+    margin-top: 5vh;
+}
+
+.main-block{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.photo{
+    width: 60%;
+    border-radius: 2vh;
+    margin-bottom: 10%;
+}
+
+.first-photo{
+    border: 5px solid rgb(226, 146, 141);
+}
+
+.second-photo{
+    border: 5px solid rgb(77, 231, 236);
+}
+
+.answer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.answer-btn{
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-radius: 1vh;
+    margin: 1vh;
+}
+
+.first-btn{
+    background-color: rgb(226, 146, 141);
+}
+
+.second-btn{
+    background-color: rgb(77, 231, 236);
+}
+
+.back{
+    background-color: red;
+}
+
+.winner-photo{
+    position: absolute;
+    top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transition: all .5s ease;
+    animation: show 1s linear forwards */
+}
+
+.win-img{
+    width: 90%;
+    border-radius: 2vh;
+    display: none;
+    /* transition: all .5s ease; */
+    animation: show 1s linear forwards
+}
+
+@keyframes show{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
